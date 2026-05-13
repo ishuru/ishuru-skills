@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2026-05-13
+
+### Added
+
+- **caveman-compress** — Compress memory files to caveman format
+- **caveman-commit** — Ultra-compressed commit messages
+- **caveman-review** — Compressed code review comments
+- **git-guardrails-claude-code** — Block dangerous git commands
+- **improve-codebase-architecture** — Deepening opportunities in codebases
+- **request-refactor-plan** — Detailed refactor plans via interview
+- **triage-issue** — Root cause exploration → GitHub issue
+- **to-issues** — Break plans into grabbable issues
+- **to-prd** — Conversation context → PRD
+- **github-skill** — Turn GitHub repo URLs into agent context
+- **github-cli-token-ops** — Multi-account GitHub CLI scripting
+- **github-ops** — Branch, PR, issue, repo health automation
+- **design-system** — Unified design router (all brands)
+- **data-dashboard** — Interactive HTML dashboards
+- **mcp-dashboard-skin** — Custom MCP server dashboards
+- **web-slide-studio** — Browser-native HTML slide decks
+- **pptx-extract** — Extract structured content from PPTX
+- **pptx-visual-validation** — Visual PPTX validation
+- **plugin-creator** — OpenCode plugin creation and porting
+- **electron** — Automate Electron desktop apps
+- **safari-applescript-js** — JS injection into Safari from terminal
+- **scaffold-exercises** — Exercise directory structures
+- **monorepo-pr-scoping** — Scoped PRs in monorepos
+- **experience-capture** — Capture operational experience
+- **music-reverse-engineering** — Rebuild music from URL/audio
+
 ## [2.0.0] - 2026-05-13
 
 ### Added

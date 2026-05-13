@@ -1,38 +1,11 @@
 {
   "name": "ishuru-skills",
-  "version": "2.0.0",
-  "description": "25 curated agent skills for Craft Agent, Claude Code, and Codex — dev workflow, design systems, AI agents, browser auth, visual rendering, knowledge capture, and more.",
-  "main": "index.js",
-  "files": [
-    "skills/",
-    ".claude-plugin/",
-    "scripts/",
-    "guides/",
-    "README.md",
-    "CHANGELOG.md"
-  ],
-  "scripts": {
-    "postinstall": "node scripts/install.js",
-    "test": "echo \"No tests yet\""
-  },
-  "keywords": [
-    "agent-skills",
-    "craft-agent",
-    "claude-code",
-    "codex",
-    "gh-cli",
-    "langgraph",
-    "remotion",
-    "browser-auth",
-    "shadcn",
-    "cloudflare-workers",
-    "tdd",
-    "pptx"
-  ],
+  "version": "3.0.0",
+  "description": "50 curated agent skills for Craft Agent, Claude Code, and Codex — dev workflow, design, AI agents, browser auth, rendering, knowledge capture.",
+  "files": ["skills/", ".claude-plugin/", "scripts/", "guides/", "README.md", "CHANGELOG.md"],
+  "scripts": { "postinstall": "node scripts/install.js" },
+  "keywords": ["agent-skills", "craft-agent", "claude-code", "codex", "gh-cli", "langgraph", "remotion", "shadcn", "cloudflare-workers"],
   "author": "ishuru",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ishuru/ishuru-skills.git"
-  }
+  "repository": { "type": "git", "url": "https://github.com/ishuru/ishuru-skills.git" }
 }
