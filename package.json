@@ -1,7 +1,7 @@
 {
   "name": "ishuru-skills",
-  "version": "3.0.0",
-  "description": "50 curated agent skills for Craft Agent, Claude Code, and Codex — dev workflow, design, AI agents, browser auth, rendering, knowledge capture.",
+  "version": "4.0.0",
+  "description": "80 curated agent skills for Craft Agent, Claude Code, and Codex.",
   "files": ["skills/", ".claude-plugin/", "scripts/", "guides/", "README.md", "CHANGELOG.md"],
   "scripts": { "postinstall": "node scripts/install.js" },
   "keywords": ["agent-skills", "craft-agent", "claude-code", "codex", "gh-cli", "langgraph", "remotion", "shadcn", "cloudflare-workers"],
