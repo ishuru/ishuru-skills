@@ -1,0 +1,91 @@
+name: Validate Skills
+
+on:
+  push:
+    paths:
+      - 'skills/**'
+  pull_request:
+    paths:
+      - 'skills/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validate SKILL.md frontmatter
+        run: |
+          errors=0
+          for dir in skills/*/; do
+            slug=$(basename "$dir")
+            file="$dir/SKILL.md"
+            
+            if [ ! -f "$file" ]; then
+              echo "::error file=$file::Missing SKILL.md in $slug"
+              errors=$((errors+1))
+              continue
+            fi
+            
+            # Check frontmatter exists
+            if ! head -1 "$file" | grep -q '^---'; then
+              echo "::error file=$file::Missing frontmatter in $slug"
+              errors=$((errors+1))
+              continue
+            fi
+            
+            # Check required fields
+            for field in name description; do
+              if ! grep -q "^${field}:" "$file"; then
+                echo "::warning file=$file::Missing '$field' in $slug"
+              fi
+            done
+            
+            # Check slug format (lowercase, hyphens only)
+            if ! echo "$slug" | grep -qE '^[a-z0-9-]+$'; then
+              echo "::error file=$file::Invalid slug format: $slug"
+              errors=$((errors+1))
+            fi
+            
+            # Check content after frontmatter
+            content_start=$(grep -n '^---' "$file" | head -2 | tail -1 | cut -d: -f1)
+            content_lines=$(($(wc -l < "$file") - content_start))
+            if [ "$content_lines" -lt 5 ]; then
+              echo "::warning file=$file::Thin skill ($content_lines lines): $slug"
+            fi
+            
+            echo "  ✓ $slug"
+          done
+          
+          if [ "$errors" -gt 0 ]; then
+            echo "::error::$errors validation errors found"
+            exit 1
+          fi
+          echo "All skills validated ✓"
+      
+      - name: Check dependency resolution
+        run: |
+          # Extract all depends_on references and check they exist
+          errors=0
+          declare -A all_slugs
+          for dir in skills/*/; do
+            all_slugs["$(basename "$dir")"]=1
+          done
+          
+          for dir in skills/*/; do
+            slug=$(basename "$dir")
+            deps=$(grep -oP 'depends_on:\s*\[.*?\]' "$dir/SKILL.md" 2>/dev/null || true)
+            if [ -n "$deps" ]; then
+              # Parse dep list
+              dep_list=$(echo "$deps" | sed 's/depends_on:\s*\[//' | sed 's/\]//')
+              for dep in $(echo "$dep_list" | tr ',' '\n'); do
+                dep=$(echo "$dep" | tr -d "'\" " )
+                if [ -z "$dep" ]; then continue; fi
+                if [ -z "${all_slugs[$dep]}" ]; then
+                  echo "::warning file=$dir/SKILL.md::$slug depends on '$dep' which is not in this repo (external dep)"
+                fi
+              done
+            fi
+          done
+          
+          echo "Dependency check complete"
