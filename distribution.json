@@ -1,0 +1,7 @@
+{
+  "registry": "https://github.com/ishuru/ishuru-skill-distribution",
+  "install": "curl -sL https://raw.githubusercontent.com/ishuru/ishuru-skill-distribution/main/install.sh | bash",
+  "accounts": 7,
+  "repos": 11,
+  "total_skills": 396
+}
