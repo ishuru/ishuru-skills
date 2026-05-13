@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+
+console.log('');
+console.log('====================================');
+console.log('  ishuru-skills v1.0.0');
+console.log('  Agent skills by ishuru');
+console.log('====================================');
+console.log('');
+console.log('✓ Installation completed successfully!');
+console.log('');
+console.log('To use these skills with Claude Code:');
+console.log('');
+console.log('  Option 1 - Plugin Marketplace:');
+console.log('    /plugin marketplace add ishuru/ishuru-skills');
+console.log('');
+console.log('  Option 2 - Quick Install:');
+console.log('    npx skills add ishuru/ishuru-skills');
+console.log('');
+console.log('  Option 3 - Direct Install:');
+console.log('    /plugin install agent-skills@ishuru-skills');
+console.log('');
+console.log('Available Skills:');
+console.log('  • gh-recent — GitHub recent activity resolver');
+console.log('  • write-a-skill — Skill authoring toolkit');
+console.log('  • browser-surface-bridge — Authenticated browser data access');
+console.log('  • remotion-render — High-fidelity visual renderer');
+console.log('  • langgraph-agent — LangGraph agent builder');
+console.log('');
+console.log('Documentation:');
+console.log('  • README.md - Full documentation');
+console.log('  • CHANGELOG.md - Version history');
+console.log('');
+console.log('For more information, visit:');
+console.log('  https://github.com/ishuru/ishuru-skills');
+console.log('');
+console.log('Happy building! 🚀');
+console.log('');

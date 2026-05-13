@@ -1,0 +1,34 @@
+{
+  "name": "ishuru-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for Craft Agent, Claude Code, and Codex — gh-driven workflow, skill authoring, browser auth bridges, visual rendering, and AI agent graphs.",
+  "main": "index.js",
+  "files": [
+    "skills/",
+    ".claude-plugin/",
+    "scripts/",
+    "guides/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "agent-skills",
+    "craft-agent",
+    "claude-code",
+    "codex",
+    "gh-cli",
+    "langgraph",
+    "remotion",
+    "browser-auth"
+  ],
+  "author": "ishuru",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishuru/ishuru-skills.git"
+  }
+}
