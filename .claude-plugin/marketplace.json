@@ -1,5 +1,6 @@
 {
   "name": "ishuru-skills",
+  "description": "",
   "version": "4.0.0",
   "skills": [
     "./skills/algorithm-state-engine",
@@ -9,7 +10,6 @@
     "./skills/caveman-commit",
     "./skills/caveman-compress",
     "./skills/caveman-review",
-    "./skills/cc-animation cc-canvas-viz cc-component cc-dashboard cc-design-system cc-html-page",
     "./skills/cc-animation",
     "./skills/cc-canvas-viz",
     "./skills/cc-component",
@@ -18,7 +18,6 @@
     "./skills/cc-html-page",
     "./skills/cli-creator",
     "./skills/cloudflare-worker-builder",
-    "./skills/craft-command-surfaces craft-surface-router craft-widget-kit last-widget-context",
     "./skills/craft-command-surfaces",
     "./skills/craft-surface-router",
     "./skills/craft-widget-kit",
@@ -32,7 +31,6 @@
     "./skills/elixir-escript-mise",
     "./skills/enterprise-artifact-generator",
     "./skills/experience-capture",
-    "./skills/gc-animation gc-canvas-viz gc-component gc-dashboard gc-design-system gc-html-page",
     "./skills/gc-animation",
     "./skills/gc-canvas-viz",
     "./skills/gc-component",
@@ -62,7 +60,6 @@
     "./skills/pptx-agent",
     "./skills/pptx-extract",
     "./skills/pptx-visual-validation",
-    "./skills/react-props-form-automation migrate-to-shoehorn",
     "./skills/react-props-form-automation",
     "./skills/relative-absolute",
     "./skills/remotion-render",
@@ -71,12 +68,10 @@
     "./skills/scaffold-exercises",
     "./skills/setup-pre-commit",
     "./skills/shadcn",
-    "./skills/shadowtech-canvas-viz shadowtech-design-system shadowtech-html-page",
     "./skills/shadowtech-canvas-viz",
     "./skills/shadowtech-design-system",
     "./skills/shadowtech-html-page",
     "./skills/skill-surgery-rd",
-    "./skills/slack wacli",
     "./skills/slack",
     "./skills/spaces-skills",
     "./skills/tdd",
@@ -88,5 +83,5 @@
     "./skills/wacli",
     "./skills/web-slide-studio",
     "./skills/write-a-skill"
-  ]
+]
 }
