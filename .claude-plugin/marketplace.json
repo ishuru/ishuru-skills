@@ -1,12 +1,32 @@
 {
   "name": "ishuru-skills",
-  "description": "Agent skills for Craft Agent, Claude Code, and Codex — gh-driven workflow, skill authoring, browser auth bridges, visual rendering, and AI agent graphs.",
-  "version": "1.0.0",
+  "description": "25 curated agent skills for Craft Agent, Claude Code, and Codex — dev workflow, design systems, AI agents, browser auth, visual rendering, knowledge capture, and more.",
+  "version": "2.0.0",
   "skills": [
     "./skills/gh-recent",
     "./skills/write-a-skill",
     "./skills/browser-surface-bridge",
     "./skills/remotion-render",
-    "./skills/langgraph-agent"
+    "./skills/langgraph-agent",
+    "./skills/naming-conventions",
+    "./skills/cli-creator",
+    "./skills/tdd",
+    "./skills/crystallize",
+    "./skills/domain-model",
+    "./skills/grill-me",
+    "./skills/enterprise-artifact-generator",
+    "./skills/intelligence-report",
+    "./skills/pptx-agent",
+    "./skills/design-an-interface",
+    "./skills/shadcn",
+    "./skills/cloudflare-worker-builder",
+    "./skills/github-triage",
+    "./skills/setup-pre-commit",
+    "./skills/caveman",
+    "./skills/disk-guard",
+    "./skills/here-now",
+    "./skills/algorithm-state-engine",
+    "./skills/skill-surgery-rd",
+    "./skills/ubiquitous-language"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "ishuru-skills",
-  "version": "1.0.0",
-  "description": "Agent skills for Craft Agent, Claude Code, and Codex — gh-driven workflow, skill authoring, browser auth bridges, visual rendering, and AI agent graphs.",
+  "version": "2.0.0",
+  "description": "25 curated agent skills for Craft Agent, Claude Code, and Codex — dev workflow, design systems, AI agents, browser auth, visual rendering, knowledge capture, and more.",
   "main": "index.js",
   "files": [
     "skills/",
@@ -23,7 +23,11 @@
     "gh-cli",
     "langgraph",
     "remotion",
-    "browser-auth"
+    "browser-auth",
+    "shadcn",
+    "cloudflare-workers",
+    "tdd",
+    "pptx"
   ],
   "author": "ishuru",
   "license": "MIT",
